@@ -53,7 +53,7 @@ a:hover {
   color: rgb(204, 26, 26);
 }
 
-/*main-content*/
+// main-content
 .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -68,7 +68,7 @@ a:hover {
       height: 100%;
       background-color: rgb(129, 99, 99);
       position: absolute;
-      right: 0;
+      right: 0%;
       top: 0%;
       z-index: -1;
       clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
@@ -77,12 +77,11 @@ a:hover {
       height: 70%;
       width: 68%;
       margin-right: 10%;
-      transition: all 0.4s ease-in-out;
       img {
         width: 100%;
         height: 100%;
         background-size: cover;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.5s ease-in;
         &:hover {
           filter: grayscale(100%);
         }
@@ -107,4 +106,63 @@ a:hover {
       line-height: 2rem;
     }
   }
+}
+
+// competences
+section {
+  height: 100vh;
+  position: relative;
+}
+
+.degrade2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(129, 99, 99);
+  position: absolute;
+  right: 50%;
+  top: 0%;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 100%);
+}
+
+.competences {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progres {
+  height: 50vh;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.front-back {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#html {
+  width: 70%;
+}
+#javascript {
+  width: 40%;
+}
+#adobe {
+  width: 60%;
+}
+#wordpress {
+  width: 60%;
+}
+#base {
+  width: 50%;
+}
+#logik {
+  width: 50%;
+}
+
+i {
+  transform: scale(1.5);
 }
