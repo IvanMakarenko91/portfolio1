@@ -1,14 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+body {
+  background-color: rgb(165, 140, 140);
+}
+
 header {
-  height: 80px;
   position: fixed;
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +23,6 @@ header .menu {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 2em;
   transition: 1s;
 }
 
@@ -52,6 +53,58 @@ a:hover {
   color: rgb(204, 26, 26);
 }
 
-main {
-  background: red;
+/*main-content*/
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  .right-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .degrade {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(129, 99, 99);
+      position: absolute;
+      right: 0;
+      top: 0%;
+      z-index: -1;
+      clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+    }
+    .image {
+      height: 70%;
+      width: 68%;
+      margin-right: 10%;
+      transition: all 0.4s ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
+  .left-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 10%;
+    .principale {
+      font-size: 3rem;
+      span {
+        color: red;
+      }
+    }
+    p {
+      margin: 1.5rem 0;
+      line-height: 2rem;
+    }
+  }
 }

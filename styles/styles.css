@@ -1,15 +1,17 @@
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+body {
+  background-color: #a58c8c;
+}
+
 header {
-  height: 80px;
   position: fixed;
   width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +30,6 @@ header .menu {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 2em;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -67,7 +68,86 @@ a:hover {
   color: #cc1a1a;
 }
 
-main {
-  background: red;
+/*main-content*/
+.main-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.main-content .right-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main-content .right-main .degrade {
+  width: 100%;
+  height: 100%;
+  background-color: #816363;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+}
+
+.main-content .right-main .image {
+  height: 70%;
+  width: 68%;
+  margin-right: 10%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-content .right-main .image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-content .right-main .image img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.main-content .left-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+.main-content .left-main .principale {
+  font-size: 3rem;
+}
+
+.main-content .left-main .principale span {
+  color: red;
+}
+
+.main-content .left-main p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
