@@ -97,8 +97,8 @@ a:hover {
   right: 0%;
   top: 0%;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 100% 0%, 0% 100%);
+          clip-path: polygon(100% 100%, 100% 0, 100% 0%, 0% 100%);
 }
 
 .main-content .right-main .image {
@@ -217,5 +217,46 @@ section {
 i {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+aside {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.travaux {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.degrade3 {
+  width: 100%;
+  height: 100%;
+  background-color: #816363;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, -100% 0%, 100% 200%);
+          clip-path: polygon(0 0, 100% 0, -100% 0%, 100% 200%);
+}
+
+.first-work {
+  height: 25vh;
+  font-size: 1.5rem;
+}
+
+.second-work {
+  height: 25vh;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

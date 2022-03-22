@@ -71,7 +71,7 @@ a:hover {
       right: 0%;
       top: 0%;
       z-index: -1;
-      clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+      clip-path: polygon(100% 100%, 100% 0, 100% 0%, 0% 100%);
     }
     .image {
       height: 70%;
@@ -165,4 +165,37 @@ section {
 
 i {
   transform: scale(1.5);
+}
+
+aside {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.travaux {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.degrade3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(129, 99, 99);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, -100% 0%, 100% 200%);
+}
+
+.first-work {
+  height: 25vh;
+  font-size: 1.5rem;
+}
+.second-work {
+  height: 25vh;
+  font-size: 1.5rem;
 }
