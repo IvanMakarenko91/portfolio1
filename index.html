@@ -178,8 +178,38 @@
           </svg> Saint-Brieuc - France
         </div>
       </div>
-      <div class="col-6">
-        <h3>Contactez moi</h3>
+      <div class="col-4">
+
+        <div class="formulaire">
+          <h3 class="title title-1">Contact</h3>
+  
+          <form class="form">
+              <div class="form__group">
+                  <input type="text" class="form__input" id="nom" placeholder="Votre Nom" required>
+                  <label for="nom" class="form__label">Votre Nom</label>
+              </div>
+              <div class="form__group">
+                  <input type="email" class="form__input" id="email" placeholder="Votre Email" required>
+                  <label for="email" class="form__label">Votre Email</label>
+              </div>
+              <div class="form__group">
+                  <input type="number" class="form__input" id="age" min="16" max="99" step="1" placeholder="Votre Age" required>
+                  <label for="age" class="form__label">Votre Age</label>
+              </div>
+              <div class="form__message">
+                  <label for="message" class="form__message-label">
+                      Message complémentaire (facultatif) :
+                  </label>
+                  <textarea name="" id="message" cols="30" rows="10" class="form__input message__input" required></textarea>
+              </div>
+  
+              <div class="submit">
+                  <button class="submitBtn">Envoyer &rarr;</button>
+              </div>
+          </form>
+      </div>
+
+        <!-- <h3>Contactez moi</h3>
         <div class="d-flex justify-content-center">
         <div class="col-12 m-4">
             <form action="contact.php" method="POST">
@@ -197,12 +227,10 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> -->
       </div>
     </div>
   </footer>
-
-  <!-- <i class="fa fa-spinner fa-5x apparition"></i> -->
 
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!-- Js Typewritter -->
   <script src="folio.js" defer></script> <!-- Insertion Javascript -->
