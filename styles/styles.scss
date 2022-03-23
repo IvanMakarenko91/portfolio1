@@ -126,7 +126,7 @@ section {
 }
 
 .competences {
-  height: 25%;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +167,7 @@ i {
   transform: scale(1.5);
 }
 
+// aside
 aside {
   height: 100vh;
   position: relative;
@@ -174,7 +175,7 @@ aside {
 }
 
 .travaux {
-  height: 25%;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,4 +199,33 @@ aside {
 .second-work {
   height: 25vh;
   font-size: 1.5rem;
+}
+
+// footer
+footer {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.contact {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.degrade4 {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(129, 99, 99);
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: -1;
+  clip-path: polygon(0 0, 0% 0%, 100% 0%, 100% 100%);
+}
+
+.contacter {
+  height: 50vh;
 }
