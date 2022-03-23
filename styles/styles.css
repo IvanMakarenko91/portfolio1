@@ -108,6 +108,9 @@ a:hover {
 }
 
 .main-content .right-main .image img {
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -310,5 +313,42 @@ footer {
           transform: scale(1.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#anim-bor {
+  height: 2px;
+  background: black;
+}
+
+@-webkit-keyframes efface {
+  from {
+    background: black;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes efface {
+  from {
+    background: black;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+#ciel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: efface;
+          animation-name: efface;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 /*# sourceMappingURL=styles.css.map */

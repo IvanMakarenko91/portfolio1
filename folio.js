@@ -6,7 +6,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .pauseFor(1500)
+  .pauseFor(3500)
   .typeString('Mes Qualités : ')
   .pauseFor(600)
   .typeString('<strong style="color:#620C0C">Exigeant</strong>')
@@ -63,7 +63,7 @@ const regles = function() {
 }
 
 const conception = function() {
-  boot.innerHTML = "Evaluation incluant differents elements utilisés,<br> dont la partie Bootstrap et sa maitrise,<br>afin de rendre le site responsive."; 
+  boot.innerHTML = "Evaluation incluant differents elements utilisés,<br> dont la partie <u>Bootstrap</u> et sa maitrise,<br>afin de rendre le site responsive."; 
 }
 
 const conceptions = function() {
