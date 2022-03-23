@@ -46,3 +46,31 @@ typewriter
   .deleteChars(8)
   .pauseFor(600)
   .start();
+
+
+
+  const rule = document.getElementById("roll-rule");
+const dice = document.getElementById("regle-de");
+const boot = document.getElementById("boot-html");
+const evalboot = document.getElementById("eval-boot");
+
+const regle = function() {
+  rule.innerHTML = "<u>Règles du jeu</u> : Lancé le dé à 6 faces. <br> <p>Chaque joueur lance le dé autant de fois qu'il le souhaite.<br> Le score du dé s'accumule au même chiffre tombé dessus.<br> Si vous tombez sur le chiffre 1, on passe le dé à l'autre joueur.<br> Le 1er arrivé a 100 gagne.</p> "; 
+}
+
+const regles = function() {
+  rule.innerHTML = "Evaluation d'entrainement Javascript. <br> Creation d'un jeu de dé consistant a atteindre <br> les 100 points en premier.</div>"; 
+}
+
+const conception = function() {
+  boot.innerHTML = "Evaluation incluant differents elements utilisés,<br> dont la partie Bootstrap et sa maitrise,<br>afin de rendre le site responsive."; 
+}
+
+const conceptions = function() {
+  boot.innerHTML = "Evaluation d'entrainement HTML, CSS.<br> Creation de 2 pages web responsive.</div>"; 
+}
+
+dice.addEventListener('mouseenter',regle)
+dice.addEventListener('mouseleave',regles)
+evalboot.addEventListener('mouseenter',conception)
+evalboot.addEventListener('mouseleave',conceptions)

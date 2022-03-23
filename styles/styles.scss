@@ -233,3 +233,13 @@ footer {
 #about {
   font-size: 1.7rem;
 }
+
+#regle-de,
+#eval-boot {
+  transition: 0.5s;
+}
+
+.photo:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}

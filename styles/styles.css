@@ -298,4 +298,17 @@ footer {
 #about {
   font-size: 1.7rem;
 }
+
+#regle-de,
+#eval-boot {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.photo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=styles.css.map */
