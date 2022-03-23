@@ -460,4 +460,17 @@ footer {
   -webkit-transform: scale(0.98) translateY(1px);
           transform: scale(0.98) translateY(1px);
 }
+
+@media (max-width: 1344px) {
+  header,
+  #ciel {
+    display: none;
+  }
+}
+
+@media (min-width: 1345px) {
+  .navbar {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
