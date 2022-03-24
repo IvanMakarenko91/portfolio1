@@ -49,7 +49,7 @@ typewriter
 
 
 
-  const rule = document.getElementById("roll-rule");
+const rule = document.getElementById("roll-rule");
 const dice = document.getElementById("regle-de");
 const boot = document.getElementById("boot-html");
 const evalboot = document.getElementById("eval-boot");
