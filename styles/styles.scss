@@ -247,11 +247,6 @@ footer {
   transition: 0.5s;
 }
 
-#anim-bor {
-  height: 2px;
-  background: black;
-}
-
 // Animation page d'acceuil
 
 @keyframes efface {
@@ -386,4 +381,11 @@ footer {
   .navbar {
     display: none;
   }
+}
+
+#bordure1,
+#bordure2,
+#bordure3 {
+  border: 1px solid black;
+  transition: all 1s;
 }

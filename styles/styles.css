@@ -315,11 +315,6 @@ footer {
   transition: 0.5s;
 }
 
-#anim-bor {
-  height: 2px;
-  background: black;
-}
-
 @-webkit-keyframes efface {
   from {
     background: black;
@@ -472,5 +467,13 @@ footer {
   .navbar {
     display: none;
   }
+}
+
+#bordure1,
+#bordure2,
+#bordure3 {
+  border: 1px solid black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=styles.css.map */
