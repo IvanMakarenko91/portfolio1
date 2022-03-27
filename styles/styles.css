@@ -432,4 +432,11 @@ footer {
   font-size: 1.5rem;
   padding: 1%;
 }
+
+.fa-github:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+}
 /*# sourceMappingURL=styles.css.map */

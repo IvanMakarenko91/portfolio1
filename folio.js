@@ -85,6 +85,6 @@ button.onclick = function(){
   }
   else {
     content.className = "open";
-    button.innerHTML = "En savoir plus";
+    button.innerHTML = "En savoir plus me concernant";
   }
 }
