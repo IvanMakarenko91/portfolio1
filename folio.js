@@ -67,7 +67,7 @@ const conception = function() {
 }
 
 const conceptions = function() {
-  boot.innerHTML = "Evaluation d'entrainement HTML, CSS.<br> Creation de 2 pages web responsive.</div>"; 
+  boot.innerHTML = "Evaluation d'entrainement HTML, CSS. Creation de 2 pages web responsive.</div>"; 
 }
 
 dice.addEventListener('mouseenter',regle)
