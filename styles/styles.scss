@@ -318,3 +318,35 @@ footer {
   border: 1px solid black;
   transition: ease-in-out 1s;
 }
+
+#content {
+  width: 100%;
+  background-color: rgb(119, 29, 29);
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  max-height: 0px;
+  overflow: hidden;
+
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#content.open {
+  max-height: 100%;
+  padding: 5%;
+
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#show-more {
+  background-color: rgb(68, 70, 70);
+  color: rgb(255, 255, 255);
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1%;
+}

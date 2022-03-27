@@ -74,3 +74,17 @@ dice.addEventListener('mouseenter',regle)
 dice.addEventListener('mouseleave',regles)
 evalboot.addEventListener('mouseenter',conception)
 evalboot.addEventListener('mouseleave',conceptions)
+
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
+
+button.onclick = function(){
+  if (content.className == "open"){
+    content.className = "";
+    button.innerHTML = "En savoir plus me concernant";
+  }
+  else {
+    content.className = "open";
+    button.innerHTML = "En savoir plus";
+  }
+}

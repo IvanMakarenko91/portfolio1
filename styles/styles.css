@@ -404,4 +404,32 @@ footer {
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
+
+#content {
+  width: 100%;
+  background-color: #771d1d;
+  font-size: 1.3rem;
+  color: white;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#content.open {
+  max-height: 100%;
+  padding: 5%;
+  -webkit-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#show-more {
+  background-color: #444646;
+  color: white;
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1%;
+}
 /*# sourceMappingURL=styles.css.map */
