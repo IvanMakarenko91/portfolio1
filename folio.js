@@ -55,7 +55,7 @@ const boot = document.getElementById("boot-html");
 const evalboot = document.getElementById("eval-boot");
 
 const regle = function() {
-  rule.innerHTML = "<u>Règles du jeu</u> : Lancé le dé à 6 faces. <br> <p>Chaque joueur lance le dé autant de fois qu'il le souhaite.<br> Le score du dé s'accumule au même chiffre tombé dessus.<br> Si vous tombez sur le chiffre 1, on passe le dé à l'autre joueur.<br> Le 1er arrivé a 100 gagne.</p> "; 
+  rule.innerHTML = "<u>Règles du jeu</u> : Lancé le dé à 6 faces. <p>Chaque joueur lance le dé autant de fois qu'il le souhaite. Le score du dé s'accumule au même chiffre tombé dessus. Si vous tombez sur le chiffre 1, on passe le dé à l'autre joueur. Le 1er arrivé a 100 gagne.</p> "; 
 }
 
 const regles = function() {
