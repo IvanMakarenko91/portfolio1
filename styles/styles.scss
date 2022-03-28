@@ -107,7 +107,6 @@ a:hover {
     .image {
       height: 70%;
       width: 68%;
-      margin-right: 10%;
       img {
         box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
         border-radius: 50%;
@@ -141,6 +140,10 @@ a:hover {
   }
 }
 
+.presentation {
+  font-size: 1.2rem;
+}
+
 // competences
 section {
   height: 100vh;
@@ -171,7 +174,7 @@ section {
   font-size: 1.5rem;
 }
 
-.front-back {
+.front {
   text-align: center;
   font-size: 1.5rem;
   text-decoration: underline;
@@ -354,4 +357,98 @@ footer {
 .fa-github:hover {
   transition: 0.5s;
   transform: scale(2.1);
+}
+
+// Media Queries
+@media (max-width: 700px) {
+  .competences {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .main-content .right-main {
+    display: flex;
+    align-items: none;
+    justify-content: right;
+    position: absolute;
+    top: 75%;
+    right: 40%;
+  }
+
+  .degrade {
+    display: none;
+  }
+  .main-content .right-main .image {
+    height: 40%;
+    width: 25%;
+  }
+  .right-main {
+    .degrade {
+      display: none;
+    }
+  }
+  .main-content {
+    .left-main {
+      padding-top: 8%;
+      padding-left: 5%;
+      padding-right: 15%;
+      justify-content: start;
+    }
+  }
+  .main-content .left-main .principale {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 910px) {
+  .main-content .left-main .principale {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content .left-main .principale {
+    font-size: 2rem;
+  }
+  .main-content {
+    .left-main {
+      padding-right: 11%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .main-content .right-main {
+    display: flex;
+    align-items: none;
+    justify-content: right;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+  .main-content .right-main .image {
+    width: 15%;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 400px) {
+  .main-content .right-main {
+    top: 18%;
+  }
+}
+
+@media (max-width: 350px) and (min-width: 320px) {
+  .main-content .right-main {
+    top: 18%;
+  }
+}
+
+@media (max-height: 750px) and (min-width: 651px) {
+  .main-content .right-main {
+    right: 20%;
+  }
 }
