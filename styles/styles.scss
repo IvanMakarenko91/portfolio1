@@ -360,11 +360,6 @@ footer {
 }
 
 // Media Queries
-@media (max-width: 700px) {
-  .competences {
-    height: 10vh;
-  }
-}
 
 @media screen and (max-width: 1175px) {
   .main-content {
@@ -450,5 +445,27 @@ footer {
 @media (max-height: 750px) and (min-width: 651px) {
   .main-content .right-main {
     right: 20%;
+  }
+}
+
+@media (width: 1024px) and (height: 600px) {
+  .main-content .right-main .image {
+    height: 40%;
+    width: 15%;
+  }
+}
+
+@media (width: 280px) and (height: 653px) {
+  main {
+    height: 125vh;
+  }
+  #about {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .competences {
+    height: 10vh;
   }
 }
