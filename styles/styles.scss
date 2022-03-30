@@ -84,7 +84,7 @@ a:hover {
   color: rgb(204, 26, 26);
 }
 
-// main-content
+// main-content page principale. ------------------------------------------------------------------------------------------------------
 .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,7 +144,7 @@ a:hover {
   font-size: 1.2rem;
 }
 
-// competences
+// competences ---------------------------------------------------------------------------------------------------------------------------------
 section {
   height: 100vh;
   position: relative;
@@ -203,7 +203,7 @@ i {
   transform: scale(1.5);
 }
 
-// aside travaux
+// aside travaux ---------------------------------------------------------------------------------------------------------------------------------
 
 aside {
   height: 100vh;
@@ -238,7 +238,7 @@ aside {
   font-size: 1.5rem;
 }
 
-// footer
+// footer ---------------------------------------------------------------------------------------------------------------------------------
 footer {
   height: 100vh;
   position: relative;
@@ -281,7 +281,7 @@ footer {
   transition: 0.5s;
 }
 
-// Animation page d'acceuil
+// Animation page d'acceuil ---------------------------------------------------------------------------------------------------------------------------------
 
 @keyframes efface {
   from {
@@ -359,7 +359,7 @@ footer {
   transform: scale(2.1);
 }
 
-// Media Queries
+// Media Queries ---------------------------------------------------------------------------------------------------------------------------------
 
 @media screen and (max-width: 1175px) {
   .main-content {
@@ -396,6 +396,13 @@ footer {
   }
   .main-content .left-main .principale {
     font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1176px) {
+  #bordure1,
+  #bordure3 {
+    border: none;
   }
 }
 
@@ -510,6 +517,7 @@ footer {
   }
 }
 
+// Competences responsive en petits formats d'écrans.
 .cercle .progresse {
   width: 100px;
   height: 100px;
